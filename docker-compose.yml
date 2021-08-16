@@ -1,0 +1,28 @@
+version: "3.9"
+volumes:
+  php-fpm-socket-hoge:
+  dbpg-store-hoge:
+
+services:
+  app:
+    build: ./infra/php
+    depends_on:
+      - db
+    volumes:
+      - ./backend:/work
+      - php-fpm-socket-hoge:/var/run/php-fpm
+
+  web:
+    build: ./infra/nginx
+    ports:
+      - 8080:80
+    volumes:
+      - php-fpm-socket-hoge:/var/run/php-fpm
+      - ./backend:/work
+
+  db:
+    build: ./infra/pg
+    volumes:
+      - dbpg-store-hoge:/var/lib/postgresql/data
+    ports:
+      - 5432:80
