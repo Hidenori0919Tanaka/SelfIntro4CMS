@@ -25,4 +25,4 @@ services:
     volumes:
       - dbpg-store-hoge:/var/lib/postgresql/data
     ports:
-      - 5432:80
+      - 5432:5432

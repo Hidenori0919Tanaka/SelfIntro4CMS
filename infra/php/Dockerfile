@@ -16,7 +16,7 @@ ENV TZ=UTC \
   # Laravel environment
   DB_CONNECTION=pgsql \
   DB_HOST=db \
-  DB_PORT=80 \
+  DB_PORT=5432 \
   DB_DATABASE=laravel_local \
   DB_USERNAME=phper \
   DB_PASSWORD=secret
