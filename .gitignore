@@ -1,4 +1,10 @@
 /docker/logs
 /docker/php/bash
 /view-mock
-/place
+/Evacuation
+
+# PhpStorm
+.idea
+
+# Docker Compose
+.env
