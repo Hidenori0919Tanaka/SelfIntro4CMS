@@ -6,12 +6,32 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">user</title></h3>
-    {{-- <h4>{{$user}}</h4>
-    <h4>{{$id}}</h4> --}}
-      @foreach ($users as $user)
-    <p>{{$user->id}}</p>
-    <p>{{$user->name}}</p>
-      @endforeach
+      @if($user == null)
+      
+        {{-- {{ Form::open(['route' => 'user.store']) }} 
+        <div class=''>                      
+          {{ Form::label('content', '名前:') }}
+          {{ Form::text('content', null, ['placeholder'=>'名前を入力']) }}
+        </div>
+        <div class="">                      
+          {{ Form::submit('登録ボタン', ['class' => '']) }}
+          <a href='{{ route("menu") }}'>Menuに戻る</a>
+        </div>
+        {{ Form::close() }} --}}
+        <form method="POST" action={{ url('/user/store')}}>
+          @csrf
+        
+          <div>
+            <label for="form-name">名前</label>
+            <input type="text" name="name" id="form-name" required>
+          </div>
+          <button type="submit">登録</button>
+        
+        </form>
+      
+      @else
+      
+      @endif
     </div>
   </div>
   </div>

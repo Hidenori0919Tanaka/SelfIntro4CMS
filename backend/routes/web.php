@@ -32,7 +32,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('/admin', [AdminMenuController::class, 'index']);
+Route::get('/admin', [AdminMenuController::class, 'index'])->name('menu');
 
 Route::get('/user', [AdminUserController::class, 'index'])->name('user');
 Route::get('/title', [AdminTitleController::class, 'index'])->name('title');
@@ -41,3 +41,14 @@ Route::get('/me', [AdminMeController::class, 'index'])->name('me');
 Route::get('/item', [AdminItemController::class, 'index'])->name('item');
 Route::get('/work', [AdminWorkController::class, 'index'])->name('work');
 Route::get('/contact', [AdminContactController::class, 'index'])->name('contact');
+
+Route::post('store/', [AdminUserController::class, 'store'])->name('user.store');
+
+
+Route::post('update/{id}', [AdminUserController::class, 'update'])->name('user.update');
+Route::post('update/{id}', [AdminTitleController::class, 'update'])->name('title.update');
+Route::post('update/{id}', [AdminSiteController::class, 'update'])->name('site.update');
+Route::post('update/{id}', [AdminMeController::class, 'update'])->name('me.update');
+Route::post('update/{id}', [AdminItemController::class, 'update'])->name('item.update');
+Route::post('update/{id}', [AdminWorkController::class, 'update'])->name('wort.update');
+Route::post('update/{id}', [AdminContactController::class, 'update'])->name('contact.update');
