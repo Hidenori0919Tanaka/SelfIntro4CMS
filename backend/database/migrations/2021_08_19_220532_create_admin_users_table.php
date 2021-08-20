@@ -17,7 +17,6 @@ class CreateAdminUsersTable extends Migration
             $table->increments('admin_id');
 			$table->text('name')->nullable();
 			$table->timestamps();
-            $table->timestamps();
         });
     }
 

@@ -6,6 +6,10 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">me</title></h3>
+      @foreach ($mes as $me)
+    <p>{{$me->id}}</p>
+    <p>{{$me->title}}</p>
+      @endforeach
     </div>
   </div>
   </div>

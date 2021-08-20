@@ -15,7 +15,7 @@ class CreateAboutMesTable extends Migration
     {
         Schema::create('about_mes', function (Blueprint $table) {
             $table->increments('about_me_id');
-			$table->integer('admin_user_id')->nullable();
+			$table->integer('admin_user_id');
 			$table->text('title')->nullable();
 			$table->text('subtitle')->nullable();
 			$table->timestamps();

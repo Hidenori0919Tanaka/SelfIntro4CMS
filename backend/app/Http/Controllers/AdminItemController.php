@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminItemController extends Controller
 {
     //
     public function index () 
     {
-        $hello = 'Hello,World!';
-        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+        //db
+        $items=DB::table('items')->get();
 
-        return view('item');
+        return view('item', compact('items'));
     }
 }

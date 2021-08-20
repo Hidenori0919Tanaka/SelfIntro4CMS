@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminContactController extends Controller
 {
     //
     public function index () 
     {
-        $hello = 'Hello,World!';
-        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+        //db
+        $contacts=DB::table('contacts')->get();
 
-        return view('contact');
+        return view('contact', compact('contacts'));
     }
 }
