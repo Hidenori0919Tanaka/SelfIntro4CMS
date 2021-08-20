@@ -8,5 +8,11 @@
       <h3 class="ops-title">Admin Menu</h3>
     </div>
   </div>
-  
+    <a href="{{ route('user') }}">user</a><p></p>
+    <a href="{{ route('title') }}">title</a><p></p>
+    <a href="{{ route('site') }}">site</a><p></p>
+    <a href="{{ route('me') }}">me</a><p></p>
+    <a href="{{ route('item') }}">item</a><p></p>
+    <a href="{{ route('work') }}">work</a><p></p>
+    <a href="{{ route('contact') }}">contact</a><p></p>
   </div>
