@@ -6,6 +6,10 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">contact</title></h3>
+      @foreach ($contacts as $contact)
+    <p>{{$contact->contact_id}}</p>
+    <p>{{$contact->title}}</p>
+    @endforeach
     </div>
   </div>
   </div>

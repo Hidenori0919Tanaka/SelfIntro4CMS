@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminWorkController extends Controller
 {
     //
     public function index () 
     {
-        $hello = 'Hello,World!';
-        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+        //db
+        $works=DB::table('works')->get();
 
-        return view('work');
+        return view('work', compact('works'));
     }
 }

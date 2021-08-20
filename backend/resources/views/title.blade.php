@@ -6,13 +6,10 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">title</title></h3>
+      @foreach ($titles as $title)
+    <p>{{$title->id}}</p>
+    <p>{{$title->title}}</p>
+      @endforeach
     </div>
   </div>
-    {{-- <li><a href="{{ action('UserController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('TitleController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('SiteController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('meController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('ItemController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('WorkController@show', $post->id) }}">{{ $post->title }}</a></li>
-    <li><a href="{{ action('ContatController@show', $post->id) }}">{{ $post->title }}</a></li> --}}
   </div>

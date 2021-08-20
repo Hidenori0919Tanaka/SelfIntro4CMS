@@ -3,15 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class AdminMeController extends Controller
 {
     //
     public function index () 
     {
-        $hello = 'Hello,World!';
-        $hello_array = ['Hello', 'こんにちは', 'ニーハオ'];
+        //db
+        $mes=DB::table('about_mes')->get();
 
-        return view('me');
+        return view('me', compact('mes'));
     }
 }

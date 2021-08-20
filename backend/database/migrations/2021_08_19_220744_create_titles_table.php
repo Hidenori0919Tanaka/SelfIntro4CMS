@@ -15,7 +15,7 @@ class CreateTitlesTable extends Migration
     {
         Schema::create('titles', function (Blueprint $table) {
             $table->increments('title_id');
-			$table->integer('admin_user_id')->nullable();
+			$table->integer('admin_user_id');
 			$table->text('title')->nullable();
 			$table->text('subtitle')->nullable();
 			$table->timestamps();

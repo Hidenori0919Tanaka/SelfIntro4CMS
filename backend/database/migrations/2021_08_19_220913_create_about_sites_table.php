@@ -15,7 +15,7 @@ class CreateAboutSitesTable extends Migration
     {
         Schema::create('about_sites', function (Blueprint $table) {
             $table->increments('about_sites_id');
-			$table->integer('admin_user_id')->nullable();
+			$table->integer('admin_user_id');
 			$table->text('title')->nullable();
 			$table->text('subtitle')->nullable();
 			$table->timestamps();

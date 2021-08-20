@@ -15,9 +15,9 @@ class CreateWorksTable extends Migration
     {
         Schema::create('works', function (Blueprint $table) {
             $table->increments('work_id');
-			$table->integer('admin_user_id')->nullable()->unsigned();
+			$table->integer('admin_user_id');
 			$table->text('title')->nullable();
-			$table->integer('image_id')->nullable();
+			$table->text('image_id')->nullable();
 			$table->text('github_link')->nullable();
 			$table->text('hp_link')->nullable();
 			$table->timestamps();
