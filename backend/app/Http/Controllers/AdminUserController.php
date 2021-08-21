@@ -32,12 +32,14 @@ class AdminUserController extends Controller
     }
 
     public function store(Request $request){
-        $user = new Admin_user();                   // 
-        $user->content = $request->content;
-        debug($user);      // 
+        $user = new Admin_user();
+        $user->name =$request->name;
+        $user->admin_id =  $id = Auth::id();
         // $user->name = $request->user_name;  // 
         // $article->save();                           // 
         // レコード保存後に、showページへデータを渡してリダイレクト
-        return redirect('menu');
+        return view('user', compact('user'));
+        return redirect('/admin');
     }
 }
+

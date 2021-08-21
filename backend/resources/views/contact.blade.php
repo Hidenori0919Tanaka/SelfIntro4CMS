@@ -6,10 +6,35 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">contact</title></h3>
-      @foreach ($contacts as $contact)
-    <p>{{$contact->contact_id}}</p>
-    <p>{{$contact->title}}</p>
-    @endforeach
+      @if($contacts == null)
+      
+        {{ Form::open(['route' => 'contact.store']) }} 
+        <div class=''>                      
+          {{ Form::label('title', 'タイトル:') }}
+          {{ Form::text('title', null, ['placeholder'=>'タイトルを入力']) }}
+        </div>
+        <div class="">                      
+          {{ Form::submit('登録ボタン', ['class' => '']) }}
+          <a href='{{ route("menu") }}'>Menuに戻る</a>
+        </div>
+        {{ Form::close() }}
+        {{-- <form method="POST" action={{ route('user.store')}}>
+          @csrf
+        
+          <div>
+            <label for="form-name">名前</label>
+            <input type="text" name="name" id="form-name" required>
+          </div>
+          <button type="submit">登録</button>
+        
+        </form> --}}
+        {{-- <p>{{$model->admin_id}}</p> --}}
+        {{-- <p>{{$model->title}}</p> --}}
+      <p>{{$title}}</p>
+      @else
+      {{-- <p>{{$model->admin_id}}</p> --}}
+      {{-- <p>{{$model->title}}</p> --}}
+      @endif
     </div>
   </div>
   </div>
