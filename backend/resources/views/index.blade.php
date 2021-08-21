@@ -41,12 +41,10 @@
   <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
     <h1>TNK_HidyLab</h1>
     <h2></h2>
-    <a href="#about" class="btn-get-started scrollto"><i class="bi bi-chevron-double-down"></i></a>
   </section><!-- End Hero -->
 
   <!-- ======= Header ======= -->
-  <!-- ======= 要らない ======= -->
-  <header id="header" class="d-flex align-items-center">
+  {{-- <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
@@ -57,35 +55,19 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#resume">Resume</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#homeSc">Home</a></li>
+          <li><a class="nav-link scrollto" href="#siteSc">About Site</a></li>
+          <li><a class="nav-link scrollto" href="#meSc">About Me</a></li>
+          <li><a class="nav-link scrollto" href="#skillSc">Skill</a></li>
+          <li><a class="nav-link scrollto" href="#worksSc">Works</a></li>
+          <li><a class="nav-link scrollto" href="#commentSc">comment</a></li>
+          <li><a class="nav-link scrollto" href="#contactSc">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header -->
+  </header><!-- End Header --> --}}
 
   <main id="main">
 
@@ -198,7 +180,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
               <h4 class="title"><a href="">Lorem Ipsum</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
@@ -206,7 +188,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
               <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
@@ -214,7 +196,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
               <h4 class="title"><a href="">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
@@ -222,7 +204,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
@@ -233,7 +215,7 @@
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
               <h4 class="title"><a href="">Lorem Ipsum</a></h4>
               <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
             </div>
@@ -241,7 +223,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
+              {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
               <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
               <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
             </div>
@@ -249,7 +231,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
               <h4 class="title"><a href="">Magni Dolores</a></h4>
               <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
             </div>
@@ -257,7 +239,7 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
+              {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
               <h4 class="title"><a href="">Nemo Enim</a></h4>
               <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
             </div>
