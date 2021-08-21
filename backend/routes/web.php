@@ -21,13 +21,13 @@ use App\Http\Controllers\AdminContactController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('index');
-// });
-
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/dashboard', function () {
     return view('dashboard');
