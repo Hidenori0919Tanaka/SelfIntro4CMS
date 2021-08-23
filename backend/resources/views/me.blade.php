@@ -6,10 +6,21 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">me</title></h3>
-      @foreach ($mes as $me)
-    <p>{{$me->id}}</p>
-    <p>{{$me->title}}</p>
-      @endforeach
+      @if(is_null($model))
+      
+      {{ Form::open(['route' => 'me.store']) }} 
+      <div class=''>                      
+        {{ Form::label('title', '名前:') }}
+        {{ Form::text('title', null, ['placeholder'=>'名前を入力']) }}
+      </div>
+      <div class="">                      
+        {{ Form::submit('登録ボタン', ['class' => '']) }}
+        <a href='{{ route("menu") }}'>Menuに戻る</a>
+      </div>
+      {{ Form::close() }}
+    @else
+    <p>{{$model->title}}</p>
+    @endif
     </div>
   </div>
   </div>

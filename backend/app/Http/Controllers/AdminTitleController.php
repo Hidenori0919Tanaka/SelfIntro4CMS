@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Title;
 
 class AdminTitleController extends Controller
 {
@@ -18,8 +19,17 @@ class AdminTitleController extends Controller
         $id = Auth::id();
 
         //db
-        $titles=DB::table('titles')->get();
+        $titles=DB::table('titles')->first();
 
-        return view('title', compact('titles'));
+        $model = null;
+
+        return view('title', compact('titles','model'));
+    }
+
+    public function store(Request $request){
+        $model = new Title();
+        $model->title = $request->input('title');
+        $titles = null;
+        return view('title', compact('model','titles'));
     }
 }
