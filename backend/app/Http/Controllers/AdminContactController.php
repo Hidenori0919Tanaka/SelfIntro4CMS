@@ -16,20 +16,14 @@ class AdminContactController extends Controller
         $contacts=DB::table('contacts')->first();
 
         // $model = null;
-        $title = 0;
+        $title = null;
 
         return view('contact', compact('contacts', 'title'));
     }
 
     public function store(Request $request){
-        // $model = new Contact();
-        $title = $request->title;
-        // $model->admin_id = Auth::id();
-        $contacts=DB::table('contacts')->first();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
-        return view('contact', compact('title','contacts'));
-        return redirect('/admin');
+        $title = $request->input('title');
+        debug($title);
+        return view('contact', compact('title'));
     }
 }

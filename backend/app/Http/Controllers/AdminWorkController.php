@@ -14,20 +14,15 @@ class AdminWorkController extends Controller
     public function index () 
     {
         //db
-        $works=DB::table('works')>first();
-
-        return view('work', compact('works'));
+        $works=DB::table('works')->first();
+        $model = null;
+        return view('work', compact('works','model'));
     }
 
     public function store(Request $request){
         $model = new Work();
-        $model->title =$request->title;
-        $model->admin_id =  $id = Auth::id();
-        $works=DB::table('works')>first();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
+        $model->title =$request->input('title');
+        $works = null;
         return view('work', compact('model','works'));
-        return redirect('/admin');
     }
 }

@@ -14,20 +14,16 @@ class AdminItemController extends Controller
     public function index () 
     {
         //db
-        $items=DB::table('items')>first();
-
-        return view('item', compact('items'));
+        $items=DB::table('items')->first();
+        $item = null;
+        return view('item', compact('items','item'));
     }
 
     public function store(Request $request){
+        $items = null;
         $model = new Item();
-        $model->item1 =$request->item1;
-        $model->admin_id =  $id = Auth::id();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
-        $items=DB::table('items')>first();
-        return view('item', compact('model','items'));
-        return redirect('/admin');
+        $model->item1 =$request->input('item1');
+        $item = $model->item1;
+        return view('item', compact('item','items'));
     }
 }

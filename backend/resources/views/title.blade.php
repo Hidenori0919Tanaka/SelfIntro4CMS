@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">title</title></h3>
-      @if($model == null)
+      @if(!$model)
       
       {{ Form::open(['route' => 'title.store']) }} 
       <div class=''>                      
@@ -30,7 +30,6 @@
       </form> --}}
     
     @else
-    <p>{{$model->admin_id}}</p>
     <p>{{$model->title}}</p>
     @endif
     </div>

@@ -22,7 +22,8 @@ class AdminUserController extends Controller
 
             //db
             $user=DB::table('admin_users')->first();
-            return view('user', compact('user'));
+            $model = null;
+            return view('user', compact('user','model'));
         }
         catch( Exception $ex)
         {
@@ -32,14 +33,10 @@ class AdminUserController extends Controller
     }
 
     public function store(Request $request){
-        $user = new Admin_user();
-        $user->name =$request->name;
-        $user->admin_id =  $id = Auth::id();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
-        return view('user', compact('user'));
-        return redirect('/admin');
+        $model = new Admin_user();
+        $model->name =$request->input('name');
+        $user = null;
+        return view('user', compact('user','model'));
     }
 }
 

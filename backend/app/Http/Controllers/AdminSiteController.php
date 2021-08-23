@@ -13,20 +13,15 @@ class AdminSiteController extends Controller
     public function index () 
     {
         //db
-        $sites=DB::table('about_sites')>first();
-
-        return view('site', compact('sites'));
+        $sites=DB::table('about_sites')->first();
+        $model= null;
+        return view('site', compact('model','sites'));
     }
 
     public function store(Request $request){
         $model = new About_site();
-        $model->title =$request->title;
-        $model->admin_id =  $id = Auth::id();
-        $sites=DB::table('about_sites')>first();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
+        $model->title =$request->input('title');
+        $sites = null;
         return view('site', compact('model','sites'));
-        return redirect('/admin');
     }
 }

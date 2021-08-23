@@ -6,8 +6,8 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">item</title></h3>
-      @if($items == null)
-      
+      @if(is_null($item))
+      <p>{{$item}}</p>
         {{ Form::open(['route' => 'item.store']) }} 
         <div class=''>                      
           {{ Form::label('item1', '名前:') }}
@@ -18,20 +18,8 @@
           <a href='{{ route("menu") }}'>Menuに戻る</a>
         </div>
         {{ Form::close() }}
-        {{-- <form method="POST" action={{ route('user.store')}}>
-          @csrf
-        
-          <div>
-            <label for="form-name">名前</label>
-            <input type="text" name="name" id="form-name" required>
-          </div>
-          <button type="submit">登録</button>
-        
-        </form> --}}
-      
       @else
-      <p>{{$model->admin_id}}</p>
-      <p>{{$model->title}}</p>
+      <p>{{$item}}</p>
       @endif
     </div>
   </div>

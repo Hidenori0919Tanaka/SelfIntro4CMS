@@ -6,7 +6,7 @@
   <div class="row">
     <div class="col-md-12">
       <h3 class="ops-title">contact</title></h3>
-      @if($contacts == null)
+      @if(is_null($title))
       
         {{ Form::open(['route' => 'contact.store']) }} 
         <div class=''>                      
@@ -30,10 +30,8 @@
         </form> --}}
         {{-- <p>{{$model->admin_id}}</p> --}}
         {{-- <p>{{$model->title}}</p> --}}
-      <p>{{$title}}</p>
       @else
-      {{-- <p>{{$model->admin_id}}</p> --}}
-      {{-- <p>{{$model->title}}</p> --}}
+      <p>{{$title}}</p>
       @endif
     </div>
   </div>

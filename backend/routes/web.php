@@ -48,7 +48,7 @@ Route::post('/site/store/', [AdminSiteController::class, 'store'])->name('site.s
 Route::post('/me/store/', [AdminMeController::class, 'store'])->name('me.store');
 Route::post('/item/store/', [AdminItemController::class, 'store'])->name('item.store');
 Route::post('/work/store/', [AdminWorkController::class, 'store'])->name('work.store');
-Route::post('/contact/store/', [AdminContactController::class, 'index'])->name('contact.store');
+Route::post('/contact/store/', [AdminContactController::class, 'store'])->name('contact.store');
 
 Route::post('/user/update/{id}', [AdminUserController::class, 'update'])->name('user.update');
 Route::post('/title/update/{id}', [AdminTitleController::class, 'update'])->name('title.update');

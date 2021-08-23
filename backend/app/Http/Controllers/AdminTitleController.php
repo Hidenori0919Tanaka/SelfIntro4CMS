@@ -28,13 +28,8 @@ class AdminTitleController extends Controller
 
     public function store(Request $request){
         $model = new Title();
-        $model->title = $request->title;
-        $model->admin_id = 0;
-        $titles=DB::table('titles')->first();
-        // $user->name = $request->user_name;  // 
-        // $article->save();                           // 
-        // レコード保存後に、showページへデータを渡してリダイレクト
+        $model->title = $request->input('title');
+        $titles = null;
         return view('title', compact('model','titles'));
-        return redirect('/admin');
     }
 }
