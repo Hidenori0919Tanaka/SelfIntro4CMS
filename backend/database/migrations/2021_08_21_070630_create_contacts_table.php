@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContactFSTable extends Migration
+class CreateContactsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateContactFSTable extends Migration
      */
     public function up()
     {
-        Schema::create('contact_f_s', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->nullable()->unsigned();
+            $table->foreignId('user_id')->constrained();
             $table->text('title')->nullable();
             $table->text('twitter_link')->nullable();
             $table->text('email_link')->nullable();
-            $table->foreign("id")->references("id")->on("users");
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateContactFSTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contact_f_s');
+        Schema::dropIfExists('contacts');
     }
 }
