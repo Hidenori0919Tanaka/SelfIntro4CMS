@@ -15,11 +15,9 @@ class CreateMesTable extends Migration
     {
         Schema::create('mes', function (Blueprint $table) {
             $table->id();
-            $table->increments('id')->unsigned();
-			$table->integer('user_id')->nullable()->unsigned();
+			$table->foreignId('user_id')->constrained();
 			$table->text('title')->nullable();
 			$table->text('subtitle')->nullable();
-			$table->foreign("user_id")->references("id")->on("users");
             $table->timestamps();
         });
     }

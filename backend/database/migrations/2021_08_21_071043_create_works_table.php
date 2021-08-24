@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTitleFSTable extends Migration
+class CreateWorksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateTitleFSTable extends Migration
      */
     public function up()
     {
-        Schema::create('title_f_s', function (Blueprint $table) {
+        Schema::create('works', function (Blueprint $table) {
             $table->id();
-            $table->integer('user_id')->nullable()->unsigned();
+            $table->foreignId('user_id')->constrained();
 			$table->text('title')->nullable();
-            $table->text('subtitle')->nullable();
-            $table->foreign("user_id")->references("id")->on("users");
+			$table->text('image_id')->nullable();
+			$table->text('github_link')->nullable();
+			$table->text('hp_link')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateTitleFSTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('title_f_s');
+        Schema::dropIfExists('works');
     }
 }
