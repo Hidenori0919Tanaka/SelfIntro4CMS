@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Lonely Bootstrap Template - Index</title>
+  <title>Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -27,28 +27,16 @@
   <!-- Template Main CSS File -->
   <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Lonely - v4.3.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-lonely/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Title ======= -->
-  <section id="hero" class="d-flex flex-column align-items-center justify-content-center">
-    <h1>TNK_HidyLab</h1>
-    <h2></h2>
-  </section><!-- End Hero -->
-
-  <!-- ======= Header ======= -->
-  {{-- <header id="header" class="d-flex align-items-center">
+    <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
       <div class="logo">
-        <h1><a href="index.html">Lonely</a></h1>
+        <h1><a href="index.html"></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -67,227 +55,246 @@
       </nav><!-- .navbar -->
 
     </div>
-  </header><!-- End Header --> --}}
+  </header><!-- End Header -->
+  <!-- ======= Title ======= -->
+    <div>
+        <section id="homeSc" class="d-flex flex-column align-items-center justify-content-center">
+            <h1>TNK_HidyLab</h1>
+            <h2></h2>
+        </section>
+    </div>
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
+    <div style="overflow: auto; scroll-snap-type: y mandatory; height: 100vh;">
+        <section id="siteSc" class="contact section-bg" style="scroll-snap-align: start; heght: 100vh;">
+            <div class="container">
 
-        <div class="section-title">
-          <h2>About site</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-      </div>
-    </section><!-- End About Section -->
-
+              <div class="section-title" style="width:200; margin: 0 auto;">
+                {{-- <h2></h2>
+                <p></p> --}}
+                  <h2>About site</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
+              </div>
+            </div>
+          </section><!-- End About Section -->
+    </div>
 
     <!-- ======= 自己紹介 Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
+    <div style="overflow: auto; scroll-snap-type: y mandatory; height: 100vh;">
+        <section id="meSc" class="contact section-bg" style="scroll-snap-align: start; heght: 100vh;">
+            <div class="container">
 
-        <div class="section-title">
-          <h2>About me</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-      </div>
-    </section><!-- End 自己紹介 Section -->
+              <div class="section-title">
+                  {{-- <h2></h2>
+                <p></p> --}}
+                <h2>About me</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
+              </div>
+            </div>
+          </section><!-- End 自己紹介 Section -->
+    </div>
 
     <!-- ======= Skills ======= -->
-    <section id="skills" class="skills section-bg">
-      <div class="container">
+    <div style="overflow: auto; scroll-snap-type: y mandatory; height: 100vh;">
+        <section id="skillSc" class="skills section-bg" style="scroll-snap-align: start; heght: 100vh;">
+            <div class="container">
 
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">ASP.NET <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="section-title">
+                <h2>Skills</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
               </div>
-            </div>
 
-            <div class="progress">
-              <span class="skill">SQLServer <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="row skills-content">
+
+                <div class="col-lg-6">
+
+                  <div class="progress">
+                    <span class="skill">ASP.NET <i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">SQLServer <i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">Azure <i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                  <div class="progress">
+                    <span class="skill">Laravel <i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">Dcker <i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                  <div class="progress">
+                    <span class="skill">AWS<i class="val"></i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+
+                </div>
+
               </div>
+
             </div>
-
-            <div class="progress">
-              <span class="skill">Azure <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="progress">
-              <span class="skill">Laravel <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Dcker <i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">AWS<i class="val"></i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
+          </section><!-- End Skills Section -->
+    </div>
 
     <!-- ======= Work Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container">
+    <div style="overflow: auto; scroll-snap-type: y mandatory; height: 100vh;">
+        <section id="worksSc" class="services section-bg" style="scroll-snap-align: start; heght: 100vh;">
+            <div class="container">
 
-        <div class="section-title">
-          <h2>Works</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
-        </div>
+              <div class="section-title">
+                <h2>Works</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
+              </div>
 
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
+                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
+                    <h4 class="title"><a href="">Magni Dolores</a></h4>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
+                    <h4 class="title"><a href="">Nemo Enim</a></h4>
+                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
+                    <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                    <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
+                    <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                    <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
+                    <h4 class="title"><a href="">Magni Dolores</a></h4>
+                    <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+                  <div class="icon-box">
+                    {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
+                    <h4 class="title"><a href="">Nemo Enim</a></h4>
+                    <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+                  </div>
+                </div>
+
+              </div>
+
             </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bxl-dribbble"></i></div> --}}
-              <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-file"></i></div> --}}
-              <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-tachometer"></i></div> --}}
-              <h4 class="title"><a href="">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box">
-              {{-- <div class="icon"><i class="bx bx-world"></i></div> --}}
-              <h4 class="title"><a href="">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
+          </section><!-- End Services Section -->
+    </div>
 
     <!-- ======= comment Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
+    <div>
+        <section id="commentSc" class="contact section-bg">
+            <div class="container">
 
-        <div class="section-title">
-          <h2>comment</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-            sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-      </div>
-    </section><!-- End comment Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-4">
-            <div class="contact-about">
-              <h3>TNK_Hidy</h3>
-              <p></p>
-              <div class="social-links">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="github"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="qiita"><i class="bi bi-instagram"></i></a>
+              <div class="section-title">
+                <h2>comment</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                  consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                  sit in iste officiis commodi quidem hic quas.</p>
               </div>
             </div>
-          </div>
+          </section><!-- End comment Section -->
+    </div>
 
-        </div>
-    </section><!-- End Contact Section -->
+    <!-- ======= Contact Section ======= -->
+    <div>
+        <section id="contactSc" class="contact section-bg">
+            <div class="container">
+
+              <div class="section-title">
+                <h2>Contact</h2>
+              </div>
+
+              <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                  <div class="contact-about">
+                    <h3>TNK_Hidy</h3>
+                    <p></p>
+                    <div class="social-links">
+                      <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                      <a href="#" class="github"><i class="bi bi-facebook"></i></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+          </section><!-- End Contact Section -->
+    </div>
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
